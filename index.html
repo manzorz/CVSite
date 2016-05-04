@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manny Garcia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body ng-app="portfolio">
+	<div id="container">
+		<header id="top">
+			<a class="icon" href="http://www.mannygarcia.co.nf"><img src="images/tinyPanda.png"></a>
+			<nav>
+				<ul>
+					<li><a href="word.html">Work</a></li>
+					<li><a href="bio.html">Bio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="firstSection" data-stellar-background-ratio="0.5">
+			<div class="wrapper">
+				<h1>Manny Garcia</h1>
+				<p class="aboutMe">Hi. My name's Manny.<br /> I'm a geospatial analyst and web developer.</p>
+				<a href="contact.html">
+					<div id="contactButton">
+						<p>Let's Get in Touch</p>
+					</div>
+				</a>
+			</div>
+		</section>
+		<section id="skills">
+			<div ng-controller="skillCtrl" class="wrapper">
+				<div class="skills">
+					<h2>Skills</h2>
+				</div>
+				<ul id="skillList">
+					<li ng-repeat="skill in skills">
+						<img class="skillsImages" ng-src="images/{{skill.image}}" alt="{{skill.alt}}" />
+						<h3>{{skill.name}}</h3>
+						<p>{{skill.description}}</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="education" data-stellar-background-ratio="0.5">
+			<div class="wrapper">
+				<div class="aboutUO">
+					<h2>I'm a UO Alumn.</h2>
+					<p>I graduated <strong>Summa Cum Laude</strong> from the Robert D. Clark Honors College at the University of Oregon with a <strong>4.0</strong> GPA. </strong>. 
+					<br /><br /> I majored in <strong>Geographic Information Sciences</strong> and minored in <strong>Computer Information Technology</strong> and Spanish.</p>
+				</div>
+			</div>
+		</section>
+		<section class="galleryOfWork">
+			<div class="wrapper">
+				<div ng-controller="workSamples" id="workSamples">
+					<h2>Some of my work</h2>
+					<ul id="work">
+						<li ng-repeat="sample in samples">
+							<img class="workSampleImage" ng-src="images/{{sample.image}}" alt="{{sample.alt}}" />
+							<h3>{{sample.name}}</h3>
+							<p>{{sample.description}}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="portland" data-stellar-background-ratio="0.5">
+			<div class="wrapper">
+				<div class="aboutPortland">
+					<h2>West Coast, Best Coast</h2>
+					<p>I was born on the West Coast and raised in Portland, Oregon. <br /> I currently call Portland home. </p>
+				</div>
+			</div>
+		</section>
+		<section id="social">
+			<div class="wrapper">
+				<div class="socialMedia">
+					<h2>Find me on Social Media</h2>
+					<ul>
+						<li>Twitter</li>
+						<li>GitHub</li>
+						<li>LinkedIn</li>
+						<li>Pinterest</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/stellar.js-master/jquery.stellar.min.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>

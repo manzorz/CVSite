@@ -1,0 +1,171 @@
+html, body, div#container{
+	height:100%;
+	width:100%;
+}
+
+.wrapper{
+	text-align: center;
+	margin:auto;
+	max-width: 1300px;
+}
+
+header{
+	position: fixed;
+	top:0;
+}
+
+a.icon{
+	padding:7px;
+	position:fixed;
+}
+
+/****************************
+	Navigation
+****************************/
+
+nav ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+nav li{
+	float: left;
+}
+
+nav li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li:hover{
+	color: #333;
+	background-color: #d8d;
+}
+
+nav{
+	
+}
+
+section{
+	width:100%;
+	height:450px;
+}
+
+.wrapper h1{
+	font-size: 10em;
+	font-family: Georgia;
+}
+
+.aboutMe{
+	font-size: 2em;
+	font-family: Verdana;
+}
+
+#contactButton{
+	margin:auto;
+	width:25%;
+	border:white solid 1px;
+	background-color: #814B98;
+	opacity: 0.5;	
+}
+
+#contactButton{
+	text-decoration: none;
+	color:#fff;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+#contactButton:hover{
+	background-color: #00063E;
+}
+
+#firstSection{
+	color:white;
+	background: url("../images/galaxy.jpg") repeat top;
+	height:700px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;
+	display:flex;
+}
+
+#skillList, #work{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#skillList li, #work li{
+	float: left;
+	width: 45%;
+	margin: 0 2.5% 2.5%;
+	background-color: #f5f5f5;
+	color:#000;
+	border-radius: 10%;
+	padding: 1% 0;
+}
+
+#skillList li a p, #work li a p{
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #bdc3c7;
+}
+
+img.skillsImages, img.workSampleImage{
+	max-height:200px;
+	max-width:400px;
+}
+
+section h2{
+	font-size: 2em;
+	font-family: Georgia;
+}
+
+#portland{
+	background: url("../images/portland.jpg") repeat;
+	background-position: 100% -1000%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;
+	display:flex;
+	justify-content: center;
+}
+
+#portland div, #education div{
+	color:white;
+	align-self: center;
+	font-family: verdana;
+}
+
+#portland div.aboutPortland h2, #education div.aboutUO h2{
+	font-size: 3em;
+	font-family: Georgia;
+}
+
+#education{
+	background: url("../images/uo.png") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;	
+	-o-background-size: cover;
+	background-size: cover;
+	display:flex;
+	justify-content: center;
+}
